@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import ListaCitas from "./ListaCitas";
+import '../style.css'
 
 const FormularioCita = () => {
   const citasLocalStorage =
@@ -46,7 +47,7 @@ const FormularioCita = () => {
 
   return (
     <div>
-      <Form className="border border-dark rounded p-3" onSubmit={handleSubmit}>
+      <Form className="border border-dark rounded p-3 bgForm" onSubmit={handleSubmit}>
         <h5>Llenar el formulario para crear una cita</h5>
         <hr className="border border-dark" />
         <Form.Group className="mb-3" controlId="formBasicMascota">
@@ -135,7 +136,7 @@ const FormularioCita = () => {
         </Form.Group>
         <hr className="border border-dark" />
         <div className="d-flex justify-content-center">
-          <Button variant="secondary" type="submit">
+          <Button className="aNc bTn" type="submit">
             Agregar nueva cita
           </Button>
         </div>
